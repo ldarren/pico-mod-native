@@ -36,7 +36,7 @@ return {
     create: function(deps){
         var
         self = this,
-        ln= __.refChain(window, ['cordova', 'plugins', 'notification', 'local'])
+        ln= __.dotchain(window, ['cordova', 'plugins', 'notification', 'local'])
 
         if (!ln) {
             this.slots = {}

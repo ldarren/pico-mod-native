@@ -13,7 +13,7 @@ return{
 		msg_error_no_bluetooth:['text','BLE require bluetooth']
 	},
     create: function(deps){
-        if (!__.refChain(window, ['ble'])){
+        if (!__.dotchain(window, ['ble'])){
             this.slots={}
             return console.warn('cordova-plugin-ble-central is not installed')
         }

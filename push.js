@@ -33,7 +33,7 @@ return {
         }]
     },
     create: function(deps){
-        if (!__.refChain(window, ['PushNotification'])) {
+        if (!__.dotchain(window, ['PushNotification'])) {
             this.slots = {}
             return console.warn(ERR_NOT_FOUND)
         }
